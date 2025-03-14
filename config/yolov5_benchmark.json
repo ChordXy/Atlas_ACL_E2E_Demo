@@ -1,0 +1,9 @@
+{
+    "tests": [
+        {
+            "test_model": "model/yolov5s_v6.om",
+            "batch_size": 1
+        }
+    ],
+    "test_iter" : 1000
+}

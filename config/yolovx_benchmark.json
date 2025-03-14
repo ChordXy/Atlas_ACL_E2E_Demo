@@ -1,0 +1,9 @@
+{
+    "tests": [
+        {
+            "test_model": "model/yolox_s_truncate.om",
+            "batch_size": 1
+        }
+    ],
+    "test_iter" : 1000
+}

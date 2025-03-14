@@ -58,14 +58,15 @@ endif()
 include_directories(
 	/usr/local/Ascend/include # for peripheral_api.h
 	${ACL_PATH}/include # acl hearders
-        /usr/include/python3.6 # for python headers
-        /usr/local/lib/python3.6/dist-packages/numpy/core/include/ # for pip installed numpy headers
+        /usr/local/python3.9.7/include/python3.9/ # for python headers
+        /usr/local/python3.9.7/lib/python3.9/site-packages/numpy/core/include # for pip installed numpy headers
+        /usr/include/jsonAnalyzer/include
         ${CMAKE_SOURCE_DIR}/src
         ${CMAKE_SOURCE_DIR}/bytetrack_csrc/include
         ${FREETYPE_INCLUDE_DIRS})
 
 if(BUILD_DEEP_SORT)
-    include_directories(/usr/include/python3.6)
+    include_directories(/usr/local/python3.9.7/lib/python3.9)
 endif(BUILD_DEEP_SORT)
 
 #add host lib path
